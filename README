@@ -1,0 +1,15 @@
+Extract license information from cargo metadata JSON output
+
+This prints the name of the crate, the license, and the license filename
+(if it exists), making it easier to audit the licenses used by all
+dependencies of a project.
+
+Run it like so:
+
+cargo metadata | crate-licenses
+
+or:
+
+cargo metadata > ./metadata.json
+crate-licenses ./metadata.json
+
